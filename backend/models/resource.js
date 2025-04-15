@@ -7,6 +7,6 @@ const ResourceSchema = new mongoose.Schema({
   difficulty: { type: String, enum: ['beginner', 'intermediate', 'advanced'], required: true },
   prerequisites: [String], // e.g., ["Python:beginner"]
   url: String
-});
+}, {timestamps: true});
 
 module.exports = mongoose.model('Resource', ResourceSchema);

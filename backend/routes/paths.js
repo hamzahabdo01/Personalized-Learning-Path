@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/user');
-const Resource = require('../models/resource');
+const User = require('../models/User');
+const Resource = require('../models/Resource');
 
 router.post('/generate', async (req, res) => {
   try {
